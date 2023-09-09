@@ -1,4 +1,4 @@
-REM --- SliderControl for Arduino   ---
+REM --- Reading Arduino - ABASIC1.2 ---
 REM --- 2023 by Isaac Garcia Peveri ---
 '--------------------------------------'
 
@@ -6,14 +6,10 @@ REM --- 2023 by Isaac Garcia Peveri ---
 OPEN "COM1:9600,N,8,1" AS #1
 COLOR 0,1
 LOCATE 4,28
-PRINT "ARDUINO  SLIDER  CONTROL"
+PRINT "* READING ARDUINO DATA* "
 
 LOCATE 5,28
 PRINT "2023 ISAAC GARCIA PEVERI"
-
-COLOR 3,0
-LOCATE 8,30
-PRINT "  SOUND STOPPED"         
 
 COLOR 1,0
 LOCATE 10,24
