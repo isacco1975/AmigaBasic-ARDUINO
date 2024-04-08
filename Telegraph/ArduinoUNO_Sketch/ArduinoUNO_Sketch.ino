@@ -76,12 +76,13 @@ void loop()
    endTime2 = millis();  
    diffTime2 = endTime2 - startTime; 
 
+/*
    if (isStartSignal && diffTime2 > 250)
    {
       Serial.println("#");
       isStartSignal = false;
    } 
-
+*/
    noTone(BUZZER_PIN);
  
    delay(20);
