@@ -86,19 +86,21 @@ DrawChar:
 
    IF charPos < 69 THEN
       charPos = charPos + 1
-      LOCATE 17,charPos:PRINT char$
       
       IF charPos = 12 THEN
          fullMsg$ = fullMsg$ + LEFT$(char$,1)
          tc$ = tc$ + LEFT$(char$,1)
+         LOCATE 17,charPos:PRINT LEFT$(char$,1)
       ELSE
          fullMsg$ = fullMsg$ + MID$(char$,2,1)
          tc$ = tc$ + MID$(char$,2,1)                   
+         LOCATE 17,charPos: Print MID$(char$,2,1)
       END IF
         
       GOSUB TranslateMorseCode
       TIMER OFF
-   ELSE
+   Else
+   	  charPos = 11
       COLOR 3,0
       LOCATE 8,30
       PRINT "  BUFFER FULL!"  
@@ -317,8 +319,8 @@ OnMouseDownEvent:
          COLOR 0,1
          charPos = 11
          FOR idx = 11 TO 69
-            LOCATE 16,idx: PRINT CHR$(32)
             LOCATE 17,idx: PRINT CHR$(32)
+            LOCATE 18,idx: PRINT CHR$(32)
          NEXT   
       END IF
     END IF

@@ -56,13 +56,13 @@ void loop()
       }
    }
 
-   if (diffTime > 0 && diffTime >= 120)
+   if (diffTime > 0 && diffTime >= 150)
    {
       Serial.println("-");
    } 
    else
    {
-     if (diffTime > 0 && diffTime < 120)
+     if (diffTime > 0 && diffTime < 200)
      {
         Serial.println(".");
      } 
