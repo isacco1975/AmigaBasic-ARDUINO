@@ -26,7 +26,7 @@ PRINT "2024 ISAAC GARCIA PEVERI"
 
 COLOR 3,0
 LOCATE 8,30
-PRINT "  Version 1.1"         
+PRINT "  Version 1.02"         
 
 COLOR 1,0
 LOCATE 10,24
@@ -100,10 +100,10 @@ DrawChar:
       GOSUB TranslateMorseCode
       TIMER OFF
    Else
-      charPos = 11
+   	  charPos = 11
       COLOR 3,0
       LOCATE 8,30
-      PRINT "   BUFFER FULL!      "  
+      PRINT "  BUFFER FULL!"  
    END IF
    
    char$ = "": k$ = ""
